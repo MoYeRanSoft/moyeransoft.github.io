@@ -1,0 +1,15 @@
+;aiu;
+
+[0.1.2]
+Name = MoFish(Red)
+Category = ????
+ProductVersion = 0.1.2
+URL = https://moyeransoft.netlify.app/products/MoYeRanSoft/MoFish/MoFish(Red)/downloads/0.1.2/MoFishInstaller.exe
+Size = 41353464
+ReleaseDate = 28/12/2022
+SHA256 = 90259F61D615B0DE896BE90050C74B15B724A16C5BCFA52B0389C95533DF9A6F
+MD5 = d6667842645d1fa830fa025985fbb214
+ServerFileName = MoFishInstaller.exe
+Flags = Critical|NoCache
+RegistryKey = HKUD\Software\MoYeRanSoft\MoFish(Red)\Version
+Version = 0.1.2
