@@ -19,7 +19,7 @@ dns:
     domain: [+.google.com, +.facebook.com, +.youtube.com, +.github.com]
     ipcidr: [240.0.0.0/4, 0.0.0.0/4, 127.0.0.1/32]
 proxies:
-    - { name: 更多节点关注@ShareCentrePro, type: vmess, server: 127.0.0.1, port: 443, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true }
+    - { name: @MoYeRanSoft-墨叶染千枝, type: vmess, server: 127.0.0.1, port: 443, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true }
     - { name: 「SCP」NL-CF-HTTP, type: vmess, server: cf-lt.sharecentre.online, port: 80, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /shirker, headers: { Host: nl.sharecentrepro.com } }, ws-path: /shirker, ws-headers: { Host: nl.sharecentrepro.com } }
     - { name: 「SCP」SG-DO-HTTP, type: vmess, server: cf-lt.sharecentre.online, port: 80, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /shirker, headers: { Host: do.sharecentrepro.com } }, ws-path: /shirker, ws-headers: { Host: do.sharecentrepro.com } }
     - { name: 「SCP」HK-CF-HTTP, type: vmess, server: cf-lt.sharecentre.online, port: 80, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /shirker, headers: { Host: hk-hytron.ilovescp.com } }, ws-path: /shirker, ws-headers: { Host: hk-hytron.ilovescp.com } }
@@ -32,9 +32,9 @@ proxies:
     - { name: 「SCP」US-DP3-HTTP, type: vmess, server: cf-lt.sharecentre.online, port: 80, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /shirker, headers: { Host: dp3.scproxy.top } }, ws-path: /shirker, ws-headers: { Host: dp3.scproxy.top } }
     - { name: 「SCP」US-DP4-HTTP, type: vmess, server: cf-lt.sharecentre.online, port: 80, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /shirker, headers: { Host: dp4.scproxy.top } }, ws-path: /shirker, ws-headers: { Host: dp4.scproxy.top } }
 proxy-groups:
-    - { name: SCP, type: select, proxies: [自动选择, 故障转移, 更多节点关注@ShareCentrePro, 「SCP」NL-CF-HTTP, 「SCP」SG-DO-HTTP, 「SCP」HK-CF-HTTP, 「SCP」NNC-CF-HTTP, 「SCP」US-BuyVM1-HTTP, 「SCP」US-BuyVM2-HTTP, 「SCP」US-BuyVM3-HTTP, 「SCP」US-BuyVM4-HTTP, 「SCP」US-DP1-HTTP, 「SCP」US-DP3-HTTP, 「SCP」US-DP4-HTTP] }
-    - { name: 自动选择, type: url-test, proxies: [更多节点关注@ShareCentrePro, 「SCP」NL-CF-HTTP, 「SCP」SG-DO-HTTP, 「SCP」HK-CF-HTTP, 「SCP」NNC-CF-HTTP, 「SCP」US-BuyVM1-HTTP, 「SCP」US-BuyVM2-HTTP, 「SCP」US-BuyVM3-HTTP, 「SCP」US-BuyVM4-HTTP, 「SCP」US-DP1-HTTP, 「SCP」US-DP3-HTTP, 「SCP」US-DP4-HTTP], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: [更多节点关注@ShareCentrePro, 「SCP」NL-CF-HTTP, 「SCP」SG-DO-HTTP, 「SCP」HK-CF-HTTP, 「SCP」NNC-CF-HTTP, 「SCP」US-BuyVM1-HTTP, 「SCP」US-BuyVM2-HTTP, 「SCP」US-BuyVM3-HTTP, 「SCP」US-BuyVM4-HTTP, 「SCP」US-DP1-HTTP, 「SCP」US-DP3-HTTP, 「SCP」US-DP4-HTTP], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: SCP, type: select, proxies: [自动选择, 故障转移, @MoYeRanSoft-墨叶染千枝, 「SCP」NL-CF-HTTP, 「SCP」SG-DO-HTTP, 「SCP」HK-CF-HTTP, 「SCP」NNC-CF-HTTP, 「SCP」US-BuyVM1-HTTP, 「SCP」US-BuyVM2-HTTP, 「SCP」US-BuyVM3-HTTP, 「SCP」US-BuyVM4-HTTP, 「SCP」US-DP1-HTTP, 「SCP」US-DP3-HTTP, 「SCP」US-DP4-HTTP] }
+    - { name: 自动选择, type: url-test, proxies: [@MoYeRanSoft-墨叶染千枝, 「SCP」NL-CF-HTTP, 「SCP」SG-DO-HTTP, 「SCP」HK-CF-HTTP, 「SCP」NNC-CF-HTTP, 「SCP」US-BuyVM1-HTTP, 「SCP」US-BuyVM2-HTTP, 「SCP」US-BuyVM3-HTTP, 「SCP」US-BuyVM4-HTTP, 「SCP」US-DP1-HTTP, 「SCP」US-DP3-HTTP, 「SCP」US-DP4-HTTP], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [@MoYeRanSoft-墨叶染千枝, 「SCP」NL-CF-HTTP, 「SCP」SG-DO-HTTP, 「SCP」HK-CF-HTTP, 「SCP」NNC-CF-HTTP, 「SCP」US-BuyVM1-HTTP, 「SCP」US-BuyVM2-HTTP, 「SCP」US-BuyVM3-HTTP, 「SCP」US-BuyVM4-HTTP, 「SCP」US-DP1-HTTP, 「SCP」US-DP3-HTTP, 「SCP」US-DP4-HTTP], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,sub.sharecentre.online,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,SCP'
